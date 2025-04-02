@@ -23,29 +23,8 @@ function redirectToQuorvex() {
             }
 
         }
-        setInterval(checkConnection(),1000)
-        
     
-const load = () =>{
-    location.reload()
-
-}
-
-window.addEventListener("online", checkConnection);
-window.addEventListener("offline", checkConnection);
-setInterval(()=>{
-
-    const time = new Date()
-    hr=time.getHours() 
-    min=time.getMinutes()
-    sec=time.getSeconds()
-    
-    const htmlTime = document.getElementById('time');
-    
-    // htmlTime.textContent = `${hr}:${min}:${sec} `
-     htmlTime.textContent = `${time} `
-},1000)
-
+setInterval(checkConnection, 1000);
 
 let attemptCount = 0;
 const maxCountAttempt =3;
@@ -101,4 +80,17 @@ window.onbeforeunload =()=>{
             hide.classList.remove('adds')
         },8000)
     },4000)
+
+const load = () =>{
+    location.reload()
+
+}
+
+window.addEventListener("online", checkConnection);
+window.addEventListener("offline", checkConnection);
+
+setInterval(() => {
+    const time = new Date();
+    document.getElementById('time').textContent = time.toLocaleString();
+}, 1000);
    

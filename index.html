@@ -3,46 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="App Title" />
-      <!-- Favicons -->
-   <!-- Linking CSS -->
-<link rel="stylesheet" href="/styles.css">
-
-<!-- Linking Favicon & Icons -->
-<link rel="icon" href="/404.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-    <title>Redirecting page - Quorvex_Institute_Connection_Check</title>
-    
+    <title>Redirecting - Quorvex Institute Connection Check</title>
+    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-
-   
+    <link rel="icon" href="/404.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body>
     <div id="time"></div>
-<div class="_body">
-
-    <div>
-        <div class="__show" id="hide"> </div>
-        <div class="loader_">
-            <div class="loader"></div>
-            <div class="loader2"></div>
+    <div class="_body">
+        <div>
+            <div class="__show" id="hide"></div>
+            <div class="loader_">
+                <div class="loader"></div>
+                <div class="loader2"></div>
+            </div>
+            <h1 id="statusMessage">Checking Internet Connection...</h1>
+            <button id="retryBtn" class="btn mt-3" style="display: none;" onclick="checkConnection()">Retry</button>
+            <p id="test"></p>
         </div>
-      
-        <h1 id="statusMessage">Checking Internet Connection...</h1>
-        <button id="retryBtn" class="btn mt-3" style="display: none;" onclick="checkConnection()">Retry</button>
-        <p id="test"></p>
+        <div>
+            <a id="link" href="https://quorvexinstitute.vercel.app/about/" style="display:none;">Take me now</a>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Quorvex Institute. Powered by <b>Quorvex</b></p>
+        </div>
     </div>
-<div>
-    <a href="https://quorvexinstitute.vercel.app/about/">Take me now</a>
-</div>
-<div class="footer">
-    <p>&copy; 2025 Quorvex Institute. Powered by <b>Quorvex</b></p>
-</div>
-</div>
- 
-<script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
